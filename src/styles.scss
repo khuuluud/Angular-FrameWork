@@ -1,1 +1,160 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+
+
+
+$mainColor: #1abc9c;
+$secondColor: #2c3e50;
+$copyColor: #1a252f;
+
+.navbar {
+  height: 100px;
+  transition: height 0.3s ease;
+}
+
+.navbar.scrolled {
+  height: 80px;
+}
+
+.home {
+  background-color: $mainColor;
+}
+
+.info {
+  height: 80vh;
+}
+
+.line {
+  background-color: white;
+  width: 80px;
+  height: 4px;
+}
+
+.home-text {
+  font-size: 40px;
+}
+
+footer {
+  background-color: $secondColor;
+}
+
+
+
+
+.copy {
+  background-color: $copyColor;
+}
+
+.about {
+  background-color: $mainColor;
+}
+
+.about-text {
+  padding-top: 100px;
+}
+
+.portifolio {
+  color: $secondColor;
+}
+
+.portifolio .line {
+  background-color: $secondColor;
+}
+
+.overlay {
+  background-color: #1abc9ce6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.portifolio .col-md-4:hover {
+  .overlay {
+    opacity: 1;
+  }
+}
+
+.portifolio-text {
+  font-size: 40px;
+}
+
+// contact
+
+.form-control:focus {
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+label {
+  width: 50%;
+  top: 3px;
+  left: 3%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.contact {
+  .contact-text {
+    color: $secondColor;
+  }
+
+  .icon {
+    color: $secondColor;
+
+    .line {
+      background-color: $secondColor;
+    }
+  }
+
+  .col-md-12.active label,
+  input:not(:placeholder-shown) + label {
+    transform: translateY(-10px);
+    color: $mainColor;
+    opacity: 1;
+  }
+
+  input {
+    z-index: 10;
+  }
+
+  .btn-primary {
+    background-color: $mainColor !important;
+    border: none;
+    padding: 5px 20px;
+  }
+
+  .contact-text {
+    font-size: 40px;
+  }
+}
+
+.details {
+  left: 0;
+  right: 0;
+  background-color: #3c55a793;
+
+  .layer {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    .container {
+      background-color: $secondColor;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    .container {
+      background-color: $secondColor;
+    }
+  }
+}

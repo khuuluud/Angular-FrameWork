@@ -1,0 +1,137 @@
+.navbar {
+  height: 100px;
+  transition: height 0.3s ease;
+}
+
+.navbar.scrolled {
+  height: 80px;
+}
+
+.home {
+  background-color: #1abc9c;
+}
+
+.info {
+  height: 80vh;
+}
+
+.line {
+  background-color: white;
+  width: 80px;
+  height: 4px;
+}
+
+.home-text {
+  font-size: 40px;
+}
+
+footer {
+  background-color: #2c3e50;
+}
+
+.icons i {
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.copy {
+  background-color: #1a252f;
+}
+
+.about {
+  background-color: #1abc9c;
+}
+
+.about-text {
+  padding-top: 100px;
+}
+
+.portifolio {
+  color: #2c3e50;
+}
+
+.portifolio .line {
+  background-color: #2c3e50;
+}
+
+.overlay {
+  background-color: rgba(26, 188, 156, 0.9019607843);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.portifolio .col-md-4:hover .overlay {
+  opacity: 1;
+}
+
+.portifolio-text {
+  font-size: 40px;
+}
+
+.form-control:focus {
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+label {
+  width: 50%;
+  top: 3px;
+  left: -20%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.contact .contact-text {
+  color: #2c3e50;
+}
+.contact .icon {
+  color: #2c3e50;
+}
+.contact .icon .line {
+  background-color: #2c3e50;
+}
+.contact input:not(:-moz-placeholder-shown) + label {
+  transform: translateY(-10px);
+  color: #1abc9c;
+  opacity: 1;
+}
+.contact .col-md-12.active label,
+.contact input:not(:placeholder-shown) + label {
+  transform: translateY(-10px);
+  color: #1abc9c;
+  opacity: 1;
+}
+.contact input {
+  z-index: 10;
+}
+.contact .btn-primary {
+  background-color: #1abc9c !important;
+  border: none;
+  padding: 5px 20px;
+}
+.contact .contact-text {
+  font-size: 40px;
+}
+
+.details {
+  left: 0;
+  right: 0;
+  background-color: rgba(60, 85, 167, 0.5764705882);
+}
+.details .layer {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .container {
+    background-color: #2c3e50;
+  }
+}/*# sourceMappingURL=styles.css.map */

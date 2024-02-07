@@ -1,0 +1,34 @@
+<section class="portifolio mt-5 pt-5">
+  <div class="container  pt-5">
+    <h2 class="portifolio-text text-center fw-bolder ">PORTFOLIO COMPONENT</h2>
+
+    <div class="icon-contact text-center d-flex align-items-center justify-content-center mb-3">
+      <div class="line me-3">
+      </div>
+      <i class="fa-solid fa-star"></i>
+      <div class="line ms-3">
+      </div>
+    </div>
+   
+
+      <div class="row mb-5" >
+        <div class="col-md-4 g-5" (click)="onclick(i)" *ngFor="let img of image;let i = index" >
+          <div class="layer position-relative">
+            <img  [src]="img" class="w-100 rounded">
+            <div class="overlay  position-absolute d-flex justify-content-center align-items-center" (click)="toggleDetails()">
+              <i class="fa-solid fa-plus fa-5x text-light"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+<div class="details   fixed-top"(click)="toggleDetails()" *ngIf="showDetails"  >
+      <div class="container ">
+        <div class="layer vh-100 d-flex justify-content-center align-items-center m-auto  pt-5">
+          <img [src]="selectedImage" alt="Selected Image" class="w-100 m-auto rounded">
+        </div>
+      </div>
+    </div>
